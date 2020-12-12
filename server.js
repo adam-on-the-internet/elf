@@ -18,10 +18,10 @@ const forceSSL = function () {
 app.use(forceSSL());
 
 // Serve only the static files form the dist directory
-app.use(express.static('./dist/fake-fan-adam'));
+app.use(express.static('./dist/elf'));
 
 app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname, '/dist/fake-fan-adam/index.html'));
+  res.sendFile(path.join(__dirname, '/dist/elf/index.html'));
 });
 
 // Start the app by listening on the default Heroku port

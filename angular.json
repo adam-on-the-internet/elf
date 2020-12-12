@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "fake-fan-adam": {
+    "elf": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/fake-fan-adam",
+            "outputPath": "dist/elf",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -73,18 +73,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "fake-fan-adam:build"
+            "browserTarget": "elf:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "fake-fan-adam:build:production"
+              "browserTarget": "elf:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "fake-fan-adam:build"
+            "browserTarget": "elf:build"
           }
         },
         "test": {
@@ -127,11 +127,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "fake-fan-adam:serve"
+            "devServerTarget": "elf:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "fake-fan-adam:serve:production"
+              "devServerTarget": "elf:serve:production"
             }
           }
         },
@@ -142,5 +142,5 @@
       }
     }
   },
-  "defaultProject": "fake-fan-adam"
+  "defaultProject": "elf"
 }

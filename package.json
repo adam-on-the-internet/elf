@@ -1,10 +1,10 @@
 {
-  "name": "fake-fan-adam",
+  "name": "elf",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "setup-ghpages": "ng add angular-cli-ghpages",
-    "ghpd": "ng deploy --base-href https://adam-on-the-internet.github.io/fake-fan-adam/",
+    "ghpd": "ng deploy --base-href https://adam-on-the-internet.github.io/elf/",
     "start": "node server.js",
     "serve": "ng serve",
     "build": "ng build",
@@ -12,7 +12,7 @@
     "lint": "ng lint",
     "pree2e": "webdriver-manager update --standalone false --gecko false --versions.chrome 2.44",
     "e2e": "ng e2e --webdriver-update=false",
-    "build-for-prod": "ng build --prod --base-href=/projects/fake-fan-adam/",
+    "build-for-prod": "ng build --prod --base-href=/projects/elf/",
     "prod-deploy": "scp -r dist/* callanan@ftp.callananconcepts.club:/home1/callanan/public_html/projects/",
     "full-deploy": "npm run build-for-prod && npm run prod-deploy",
     "postinstall": "ng build --aot --prod"
