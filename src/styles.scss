@@ -1,0 +1,17 @@
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img {
+  max-width: 300px;
+  max-height: 300px;
+}
